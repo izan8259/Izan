@@ -6,8 +6,12 @@
 
 }
 
+header {
+  margin: 0 150px 0 150px;
+}
+
 main {
-  margin: 0 200px 0 200px;
+  margin: 0 100px 0 100px;
 }
 
 h2 {
@@ -21,26 +25,41 @@ p {
   position: relative;
 }
 
-a {
-  text-decoration: none;
-  color: #767474;
-  font-size: 120%;
-}
-
-header h1{
+.name {
   text-align: center;
-  font-size: 175%;
+  font-size: 175% !important;
   text-transform: uppercase;
   font-weight: 200;
   padding: 0%;
   margin-top: 2.5%;
   cursor: pointer;
+  text-decoration: none;
+  color: #000;
 }
+
+.name a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* section {
+  display: none;
+}
+section:target {
+  display: block;
+} */
 
 .banner-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 1% 1.75% 1% 1.75%;
+  padding: 1% 0 1% 0;
+  width: 100%;
+  /* padding: 1% 0 1% 0;
+  overflow: hidden;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;  */
 }
 
 .menu {
@@ -52,19 +71,23 @@ header h1{
 }
 
 .menu li {
-  padding-right: 30%;
+  margin-right: 2vw;
 }
 
-.right-menu ul {
-  position: relative;
-  padding-left: 60%;
+.right-menu {
+  justify-content: right;
 }
 
-.active {
-  /*color: black !important;*/
+.menu a {
+  text-decoration: none;
+  color: #767474;
+  font-size: 120%;
+}
+
+/* .active {
   text-decoration: underline;
   text-underline-position: under;
-}
+} */
 
 @media (min-width: 400px) {
   .banner-grid-container {
@@ -91,13 +114,17 @@ header h1:hover {
   grid-template-columns: 50% 50%;
 } */
 
-.content-grid-container{
-  display: flex;
-  align-items: center;
-  padding-top: 4%;
+.header-content-spacing {
+  margin-top: 4%;
 }
 
-.content-grid-container > div {
+.content-flex-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.content-flex-container > div {
   margin: 25px;
 }
 
@@ -110,21 +137,20 @@ header h1:hover {
 
 .about-right-container {
   display: flex;
-  width: 50%;
   height: 70%;
+  width: 50%;
   justify-content: flex-start;
 }
 
 .about-picture {
-  width: 70%;
+  width: 60%;
   height: 100%;
-  /*
-  border-color: pink;
+  /* border-color: rgb(153, 184, 219);
   border-width: 5px;
   border-style: solid;
   border-radius: 10px;
   float: right;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
   /*box-shadow: 5px 5px hsl(0, 40%, 85%);*/
   background-color: hsl(0, 40%, 95%);
 }
@@ -132,18 +158,25 @@ header h1:hover {
 .about-text {
   position: relative;
   width: 75%;
+  margin-top: 1%;
 }
 
 @media (max-width: 350px) {
-   .about-text p {
+   /* .about-text p {
     font-size: 200%;
+  } */
+}
+
+@media (max-width: 1024x) {
+  .content-flex-container {
+    flex-direction: column;
   }
 }
 
 footer {
   position: relative;
   text-align: center;
-  margin-top: 15%;
+  margin: 5% 0 5% 0;
 }
 
 footer ul li{
