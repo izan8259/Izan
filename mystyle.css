@@ -6,15 +6,44 @@
 
 }
 
+main {
+  margin: 0 200px 0 200px;
+}
+
+h2 {
+  font-size: 150%;
+  width: 100%;
+}
+
+p {
+  width: 100%;
+  font-size: 110%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #767474;
+  font-size: 120%;
+}
+
+header h1{
+  text-align: center;
+  font-size: 175%;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 0%;
+  margin-top: 2.5%;
+  cursor: pointer;
+}
+
 .banner-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 1%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 1% 1.75% 1% 1.75%;
 }
 
-.left-menu ul, .right-menu ul{
+.menu {
   display: inline-flex;
   list-style: none;
   font-size: 90%;
@@ -22,17 +51,8 @@
   cursor: pointer;
 }
 
-.left-menu ul li, .right-menu ul li {
+.menu li {
   padding-right: 30%;
-}
-
-.right-menu a {
-  text-decoration: none;
-  color: #767474;
-}
-
-.left-menu ul {
-
 }
 
 .right-menu ul {
@@ -44,16 +64,6 @@
   /*color: black !important;*/
   text-decoration: underline;
   text-underline-position: under;
-}
-
-header h1{
-  text-align: center;
-  font-size: 150%;
-  text-transform: uppercase;
-  font-weight: 200;
-  padding: 0%;
-  margin-top: 2.5%;
-  cursor: pointer;
 }
 
 @media (min-width: 400px) {
@@ -76,23 +86,38 @@ header h1:hover {
 }
 */
 
-main .content-grid-container{
+/* .content-grid-container{
   display: grid;
   grid-template-columns: 50% 50%;
+} */
+
+.content-grid-container{
+  display: flex;
+  align-items: center;
+  padding-top: 4%;
 }
 
-main .container1 {
+.content-grid-container > div {
+  margin: 25px;
 }
 
-main .home-picture {
-  margin-top: 10%;
-  float: right;
+.about-left-container {
+  display: flex;
+  justify-content: flex-end;
+  height: 70%;
+  width: 50%;
 }
 
-main .home-picture img{
-  width: 95%;
-  max-width: 100%;
-  height: auto;
+.about-right-container {
+  display: flex;
+  width: 50%;
+  height: 70%;
+  justify-content: flex-start;
+}
+
+.about-picture {
+  width: 70%;
+  height: 100%;
   /*
   border-color: pink;
   border-width: 5px;
@@ -104,32 +129,13 @@ main .home-picture img{
   background-color: hsl(0, 40%, 95%);
 }
 
-main .container2 {
-  width: 80%;
-  height: 70%;
-}
-
-main .home-text {
+.about-text {
   position: relative;
-  float: left;
   width: 75%;
-  padding-left: 5%;
-}
-
-main .home-text h2 {
-  font-size: 150%;
-  width: 100%;
-  padding-top: 25%;
-}
-
-main .home-text p {
-  width: 100%;
-  font-size: 100%;
-  position: relative;
 }
 
 @media (max-width: 350px) {
-   .home-text p {
+   .about-text p {
     font-size: 200%;
   }
 }
