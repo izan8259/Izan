@@ -6,6 +6,16 @@
   --theme-color: steelblue;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  /* font-family: Arial; */
+}
+
 header {
   margin: 0 1.5% 0 1.5%;
 }
@@ -15,7 +25,7 @@ ul {
 }
 
 main {
-  margin: 0 8% 0 8%;
+  margin: 0 12% 0 12%;
 }
 
 h2 {
@@ -35,6 +45,10 @@ p {
 span {
   color:steelblue;
   font-weight: bold;
+}
+
+.link {
+  color:steelblue;
 }
 
 .name {
@@ -58,6 +72,127 @@ span {
 section:target {
   display: block;
 } */
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Center website */
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33333333333333%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding-bottom: 10px;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+  
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.content:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  border-radius: 18px;
+  width: auto;
+  outline: none;
+  padding: 12px 16px;
+  margin-right: 7px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(185, 182, 182);
+}
+
+.btn.active {
+  background-color: var(--theme-color);
+  color: white;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
 .banner-grid-container {
   display: grid;
@@ -95,7 +230,7 @@ section:target {
   color: #767474;
 }
 
-.active {
+.navbar-active {
   text-decoration: underline !important;
   text-underline-position: under !important;
 }
@@ -130,13 +265,13 @@ header h1:hover {
   align-items: flex-start;
 }
 
-.content-flex-container > div {
+/* .content-flex-container > div {
   margin: 20px;
-}
+} */
 
 .about-left-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   height: 70%;
   width: 100%;
 }
@@ -144,11 +279,11 @@ header h1:hover {
 .about-right-container {
   display: flex;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .about-picture {
-  width: 75%;
+  width: 85%;
   height: 100%;
   /* border-color: rgb(153, 184, 219);
   border-width: 5px;
@@ -180,7 +315,7 @@ header h1:hover {
 footer {
   position: relative;
   text-align: center;
-  margin: 5% 0 5% 0;
+  margin: 5% 0;
 }
 
 footer ul li{
@@ -192,10 +327,11 @@ footer ul li{
 }
 
 footer a {
-  color: #767474;
+  /* color: #767474; */
+  color: #ddd;
 }
 
 footer a:hover {
-  /* color: #B2B1B1; */
+  /* color: rgb(152, 185, 211); */
   color: var(--theme-color);
 }
