@@ -1,35 +1,45 @@
 :root {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #fff;
-
+  --theme-color: steelblue;
 }
 
 header {
-  margin: 0 150px 0 150px;
+  margin: 0 1.5% 0 1.5%;
+}
+
+ul {
+  padding-inline-start: 0;
 }
 
 main {
-  margin: 0 100px 0 100px;
+  margin: 0 8% 0 8%;
 }
 
 h2 {
   font-size: 150%;
   width: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 p {
   width: 100%;
-  font-size: 110%;
+  font-size: 105%;
+  font-family: 'Open Sans', sans-serif;
   position: relative;
+  line-height: 1.8;
+}
+
+span {
+  color:steelblue;
+  font-weight: bold;
 }
 
 .name {
   text-align: center;
   font-size: 175% !important;
-  text-transform: uppercase;
-  font-weight: 200;
   padding: 0%;
   margin-top: 2.5%;
   cursor: pointer;
@@ -54,6 +64,7 @@ section:target {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 1% 0 1% 0;
   width: 100%;
+  /* border-bottom: 1px solid #767474; */
   /* padding: 1% 0 1% 0;
   overflow: hidden;
   position: fixed; 
@@ -65,29 +76,29 @@ section:target {
 .menu {
   display: inline-flex;
   list-style: none;
-  font-size: 90%;
+  font-size: 100%;
   color: #767474;
-  cursor: pointer;
+  
 }
 
 .menu li {
-  margin-right: 2vw;
+  margin: 0 1vw 0 1vw;
 }
 
+
 .right-menu {
-  justify-content: right;
+  justify-self: right;
 }
 
 .menu a {
   text-decoration: none;
   color: #767474;
-  font-size: 120%;
 }
 
-/* .active {
-  text-decoration: underline;
-  text-underline-position: under;
-} */
+.active {
+  text-decoration: underline !important;
+  text-underline-position: under !important;
+}
 
 @media (min-width: 400px) {
   .banner-grid-container {
@@ -109,11 +120,6 @@ header h1:hover {
 }
 */
 
-/* .content-grid-container{
-  display: grid;
-  grid-template-columns: 50% 50%;
-} */
-
 .header-content-spacing {
   margin-top: 4%;
 }
@@ -125,25 +131,24 @@ header h1:hover {
 }
 
 .content-flex-container > div {
-  margin: 25px;
+  margin: 20px;
 }
 
 .about-left-container {
   display: flex;
   justify-content: flex-end;
   height: 70%;
-  width: 50%;
+  width: 100%;
 }
 
 .about-right-container {
   display: flex;
-  height: 70%;
-  width: 50%;
+  width: 100%;
   justify-content: flex-start;
 }
 
 .about-picture {
-  width: 60%;
+  width: 75%;
   height: 100%;
   /* border-color: rgb(153, 184, 219);
   border-width: 5px;
@@ -152,13 +157,12 @@ header h1:hover {
   float: right;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
   /*box-shadow: 5px 5px hsl(0, 40%, 85%);*/
-  background-color: hsl(0, 40%, 95%);
+  /* background-color: hsl(276, 38%, 95%); */
 }
 
 .about-text {
   position: relative;
   width: 75%;
-  margin-top: 1%;
 }
 
 @media (max-width: 350px) {
@@ -192,5 +196,6 @@ footer a {
 }
 
 footer a:hover {
-  color: #B2B1B1;
+  /* color: #B2B1B1; */
+  color: var(--theme-color);
 }
