@@ -2,6 +2,8 @@
 
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact — Izan Huang</title>
 
         <!-- Favicon -->
@@ -17,6 +19,7 @@
     
         <!-- Main CSS File-->
         <link rel="stylesheet" href="../css/mystyle.css">
+        <link href="../css/contact-form.css" rel="stylesheet">
     </head>
   
     <body>
@@ -44,14 +47,50 @@
             <div class="main header-content-spacing">
                 <h2>Contact Me!</h2>
             </div>
+                <div class="body">
+
+                    <div id="form">
+                    <form id="form-id" class="form-class pageclip-form" method="post" action="https://getform.io/f/eba73395-b64b-4139-9638-f6c42345d76c">
+                        
+                        <div class="form-group">
+                            <label for="Name" class="label">Name</label>
+                            <div class="input-group">
+                                <input type="text" id="Name" name="name" class="form-control" required>
+                            </div>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="Email" class="label">Email Address</label>
+                            <div class="input-group">
+                                <input type="email" id="Email" name="email" class="form-control" required>
+                            </div>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="Message" class="label">Message</label>
+                            <div class="input-group">
+                                <textarea id="Message" name="message" class="form-control" rows="6" maxlength="3000" required></textarea>
+                            </div>
+                        </div>
+                
+                        <div class="form-group">
+                            <button type="submit" id="button" class="button button-primary button-lg button-block">Send Message</button>
+                        </div>
+                    </form>
+                    </div>
+                
+                </div>
+            
 
         </main>
+
+        <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
         <footer>
             <ul>
               <li><a href="https://www.linkedin.com/in/izanhuang/" target="_blank" accesskey="l"><i class="fab fa-linkedin"></i></a><br></li>
               <li><a href="https://github.com/izanhuang" target="_blank" accesskey="l"><i class="fab fa-github"></i></a><br></li>
-              <li><a href="https://drive.google.com/file/d/12zoMfBCId59zbSyp_2TjGGHwnSK7ykmI/view" target="_blank" accesskey="l"><i class="fa fa-file" aria-hidden="true"></i></a><br></li>
+              <li><a href="resume.html"><i class="fa fa-file" aria-hidden="true"></i></a><br></li>
               <li><a href="mailto:huang.izan@gmail.com?subject=subject&cc=cc@example.com" accesskey="g"><i class="far fa-envelope"></i></a></li>
             </ul>
           </footer>
