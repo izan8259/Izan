@@ -27,6 +27,7 @@
 
   <!-- Header -->
   <header>
+    <input id="nav-toggle" type="checkbox">
     <div class="banner-grid-container">
       <div class="left-menu">
         <ul class="menu">
@@ -34,7 +35,7 @@
         </ul>
       </div>
 
-      <h1 class="name"><a href="index.html">Izan Huang</a></h1>
+      <div class="logo"><h2 class="name"><a href="index.html">Izan Huang</a></h2></div>
 
       <div class="right-menu">
         <ul class="menu">
@@ -44,14 +45,29 @@
         </ul>
       </div>
     </div>
+    <ul class="menu hide">
+      <li><a class="hide" href="index.html">Projects</a></li>
+      <li><a href="html/about.html">About</a></li>
+      <li><a href="html/resume.html">Resume</a></li>
+      <li><a href="html/contact.html">Contact</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
   </header>
 
   <!-- Projects -->
   <main>
+
+    <!-- Introduction -->
     <div class="main header-content-spacing">
-      <h2>Hi, my name is Izan.</h2>
-      <h3>I am a self-taught <span>front-end developer</span> and <span>artist</span> based in NYC.</h3>
-      <h3>Currently, I am interning as a Web Developer at WUSB Radio Station.</h3>
+      <div class="introduction">
+        <h1>Hi, my name is Izan.</h1>
+        <h3>I am a self-taught <span>front-end developer</span> and <span>artist</span> based in NYC.</h3>
+        <h3>Currently, I am interning as a Web Developer at WUSB Radio Station.</h3>
+      </div>
     </div>
 
     <div class="main">
@@ -249,6 +265,7 @@
   }
 </script>
 
+<!-- Footer -->
 <footer>
   <ul>
     <li><a href="https://www.linkedin.com/in/izanhuang/" target="_blank" accesskey="l"><i class="fab fa-linkedin"></i></a><br></li>

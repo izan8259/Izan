@@ -22,34 +22,50 @@
     </head>
   
     <body>
-        <header>
-            <div class="banner-grid-container">
-                <div class="left-menu">
-                    <ul class="menu">
-                    <li><a href="../index.html">Projects</a></li>
-                    </ul>
-                </div>
-            
-                <h1 class="name"><a href="../index.html">Izan Huang</a></h1>
-            
-                <div class="right-menu">
-                    <ul class="menu">
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="navbar-active" href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
 
+        <!-- Header -->
+        <header>
+            <input id="nav-toggle" type="checkbox">
+            <div class="banner-grid-container">
+              <div class="left-menu">
+                <ul class="menu">
+                  <li><a href="../index.html">Projects</a></li>
+                </ul>
+              </div>
+      
+              <div class="logo"><h2 class="name"><a href="../index.html">Izan Huang</a></h2></div>
+      
+              <div class="right-menu">
+                <ul class="menu">
+                  <li><a href="about.html">About</a></li>
+                  <li><a class="navbar-active" href="resume.html">Resume</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="menu hide">
+              <li><a class="hide" href="../index.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </label>
+          </header>
+
+        <!-- Resume -->
         <main>
             <div class="main header-content-spacing">
-                <h2>My Resume</h2>
+                <h1>My Resume</h1>
             </div>
             <iframe src="../assets/IzanHuangResume.pdf" style="width:100%; height:100vh;" frameborder="0"></iframe>
 
         </main>
 
+        <!-- Footer -->
         <footer>
             <ul>
               <li><a href="https://www.linkedin.com/in/izanhuang/" target="_blank" accesskey="l"><i class="fab fa-linkedin"></i></a><br></li>

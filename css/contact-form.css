@@ -12,8 +12,8 @@
     padding-bottom: 10px;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    max-width: 70%;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 15%;
 }
 
 .form-group {
@@ -130,7 +130,7 @@ label.label {
 
 .button-block {
     display: block;
-    width: 25%;
+    width: 100%;
 }
 
 .button-block+.button-block {
@@ -139,4 +139,17 @@ label.label {
 
 input[type="submit"].button-block, input[type="reset"].button-block, input[type="button"].button-block {
     width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    .main {
+        margin: auto;
+        
+    }
+    .body {
+        margin: 0;
+    }
+    .form {
+        margin: 0;
+    }
 }

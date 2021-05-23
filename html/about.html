@@ -22,63 +22,79 @@
   </head>
 
   <body>
+
+    <!-- Header -->
     <header>
-        <div class="banner-grid-container">
-          <div class="left-menu">
-            <ul class="menu">
-              <li><a href="../index.html">Projects</a></li>
-            </ul>
-          </div>
-    
-          <h1 class="name"><a href="../index.html">Izan Huang</a></h1>
-    
-          <div class="right-menu">
-            <ul class="menu">
-              <li><a class="navbar-active" href="about.html">About</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-
-      <main>
-        <div class="content-flex-container header-content-spacing">
-            <div class="about-left-container">
-                <img class="about-picture" src=../assets/about-picture.jpg alt="">
-            </div>
-    
-            <div class="about-right-container">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>Hello there! My name is Izan, my pronouns are she/her, and I am an aspiring <span>front-end developer</span> with a love for web development and user interface design.
-                    I graduated from Stony Brook University with a B.S. in <strong>Information Systems</strong>, specializing in System & Network Administration and Technological Systems Management.
-                    <br><br>
-                    I am fascinated with all the different ways data and interfaces are used to create user views.
-                    My background in information technology, combined with my interest in programming and design, pushes me to think outside the box and be creative.
-                    <br><br>
-                    Currently, I am a self-taught developer building mini <a class="link" href="../index.html">projects</a> after immersing myself in learning HTML, CSS, JavaScript and React.
-                    I am certifed in <a class="link" href="https://www.freecodecamp.org/certification/izanhuang/responsive-web-design" target="_blank">Responsive Web Design</a>, 
-                    <a class="link" href="https://www.freecodecamp.org/certification/izanhuang/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms and Data Structures</a>, and
-                    <a class="link" href="https://analytics.google.com/analytics/academy/certificate/9R2A0JvJQ4SZllTmJQPtyg" target="_blank">Google Analytics for Beginners</a>.
-                    <br><br>
-                    When I'm not building projects you can find me drawing, exercising or trying popular food and drinks.
-                    </p>
-                </div>
-            </div>
+      <input id="nav-toggle" type="checkbox">
+      <div class="banner-grid-container">
+        <div class="left-menu">
+          <ul class="menu">
+            <li><a href="../index.html">Projects</a></li>
+          </ul>
         </div>
 
-    </main>
+        <div class="logo"><h2 class="name"><a href="../index.html">Izan Huang</a></h2></div>
 
-    <footer>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/izanhuang/" target="_blank" accesskey="l"><i class="fab fa-linkedin"></i></a><br></li>
-          <li><a href="https://github.com/izanhuang" target="_blank" accesskey="l"><i class="fab fa-github"></i></a><br></li>
-          <li><a href="resume.html"><i class="fa fa-file" aria-hidden="true"></i></a><br></li>
-          <li><a href="mailto:huang.izan@gmail.com?subject=subject&cc=cc@example.com" accesskey="g"><i class="far fa-envelope"></i></a></li>
-        </ul>
-      </footer>
-      
+        <div class="right-menu">
+          <ul class="menu">
+            <li><a class="navbar-active" href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="menu hide">
+        <li><a class="hide" href="../index.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </header>
+
+    <!-- About -->
+    <main>
+      <div class="content-flex-container header-content-spacing">
+          <div class="about-left-container">
+              <img class="about-picture" src=../assets/about-picture.jpg alt="">
+          </div>
+  
+          <div class="about-right-container">
+              <div class="about-text">
+                  <h1>About Me</h1>
+                  <p>Hello there! I'm Izan, my pronouns are she/her, and I am an aspiring <span>front-end developer</span> with a love for web development and user interface design.
+                  I graduated from Stony Brook University with a B.S. in <strong>Information Systems</strong>, specializing in System & Network Administration and Technological Systems Management.
+                  <br><br>
+                  I am fascinated with all the different ways data and interfaces are used to create user views.
+                  My background in information technology, combined with my interest in programming and design, pushes me to think outside the box and be creative.
+                  <br><br>
+                  Currently, I am a self-taught developer building mini <a class="link" href="../index.html">projects</a> after immersing myself in learning HTML, CSS, JavaScript and React.
+                  I am certifed in <a class="link" href="https://www.freecodecamp.org/certification/izanhuang/responsive-web-design" target="_blank">Responsive Web Design</a>, 
+                  <a class="link" href="https://www.freecodecamp.org/certification/izanhuang/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms and Data Structures</a>, and
+                  <a class="link" href="https://analytics.google.com/analytics/academy/certificate/9R2A0JvJQ4SZllTmJQPtyg" target="_blank">Google Analytics for Beginners</a>.
+                  <br><br>
+                  When I'm not building projects you can find me drawing, exercising or trying popular food and drinks.
+                  </p>
+              </div>
+          </div>
+      </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/izanhuang/" target="_blank" accesskey="l"><i class="fab fa-linkedin"></i></a><br></li>
+        <li><a href="https://github.com/izanhuang" target="_blank" accesskey="l"><i class="fab fa-github"></i></a><br></li>
+        <li><a href="resume.html"><i class="fa fa-file" aria-hidden="true"></i></a><br></li>
+        <li><a href="mailto:huang.izan@gmail.com?subject=subject&cc=cc@example.com" accesskey="g"><i class="far fa-envelope"></i></a></li>
+      </ul>
+    </footer>
+    
   </body>
 
 </html>
