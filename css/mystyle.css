@@ -435,7 +435,8 @@ header h1:hover {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  animation: fadeInAnimationSlower ease 2s;
+  animation: fadeInAnimationSlow ease 1.4s;
+  /* animation-delay: 1s; */
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
