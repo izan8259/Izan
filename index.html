@@ -1,299 +1,494 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta http-equiv="X-UA-Compatible" content="ie-edge"> -->
-  <title>Izan Huang</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie-edge"> -->
+    <title>Izan Huang</title>
 
-  <!-- Favicon -->
-  <link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
-  
-  <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
 
-  <!-- Icon Stylesheet-->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  
-  <!-- Main CSS File-->
-  <link rel="stylesheet" href="css/mystyle.css">
+    <!-- Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCNXGZPCS1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Icon Stylesheet-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-    gtag('config', 'G-KCNXGZPCS1');
-  </script>
+    <!-- Main CSS File-->
+    <link rel="stylesheet" href="css/mystyle.css" />
 
-</head>
-
-<body>
-
-  <!-- Header -->
-  <header>
-    <input id="nav-toggle" type="checkbox">
-    <div class="banner-grid-container">
-      <div class="left-menu">
-        <ul class="menu">
-          <li><a class="navbar-active" href="index.html">Projects</a></li>
-        </ul>
-      </div>
-
-      <div class="logo"><h2 class="name"><a href="index.html">Izan Huang</a></h2></div>
-
-      <div class="right-menu">
-        <ul class="menu">
-          <li><a href="html/about.html">About</a></li>
-          <li><a href="html/resume.html">Resume</a></li>
-          <li><a href="html/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <ul class="menu hide">
-      <li><a class="hide" href="index.html">Projects</a></li>
-      <li><a href="html/about.html">About</a></li>
-      <li><a href="html/resume.html">Resume</a></li>
-      <li><a href="html/contact.html">Contact</a></li>
-    </ul>
-    <label for="nav-toggle" class="icon-burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </label>
-  </header>
-
-  <!-- Projects -->
-  <main>
-
-    <!-- Introduction -->
-    <div class="main header-content-spacing">
-      <div class="introduction">
-        <h1>Hi, my name is Izan. <span class="emoji">👩🏻‍💻</span></h1>
-        <h3>I am a <span class="blue">front-end developer</span> and <span class="blue">artist</span> based in NYC.</h3>
-      </div>
-    </div>
-
-    <div class="main">
-    <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('htmlcss')"> HTML/CSS</button>
-      <button class="btn" onclick="filterSelection('javascript')"> JavaScript</button>
-      <button class="btn" onclick="filterSelection('other')"> Other</button>
-    </div>
-    
-    <!-- Portfolio Gallery Grid -->
-    <div class="row">
-      <div class="column javascript">
-        <div class="content">
-          <a href="https://izanhuang.github.io/local-weather-app/" target="_blank">
-            <img src="assets/local-weather-app.png" alt="Local Weather App" style="width:100%">
-            <div class="overlay">
-              <div class="text">A weather app where you can find the temperature of your local area in Celsius and Fahrenheit, made with Vanilla JavaScript.</div>
-            </div>
-          </a>
-          <h4>Local Weather App</h4>
-        </div>
-      </div>
-      <div class="column javascript">
-        <div class="content">
-          <a href="https://izanhuang.github.io/javascript-calculator/" target="_blank">
-            <img src="assets/javascript-calculator.png" alt="JavaScript Calculator" style="width:100%">
-            <div class="overlay">
-              <div class="text">A gradient themed JavaScript calculator made with React.</div>
-            </div>
-          </a>
-          <h4>JavaScript Calculator</h4>
-        </div>
-      </div>
-      <div class="column javascript">
-        <div class="content">
-          <a href="https://izanhuang.github.io/drum-machine/" target="_blank">
-            <img src="assets/drum-machine.png" alt="Drum Machine" style="width:100%">
-            <div class="overlay">
-              <div class="text">A simple drum machine activated by button or mouse clicks made with React.</div>
-            </div>
-          </a>
-          <h4>Drum Machine</h4>
-        </div>
-      </div>
-      <div class="column javascript">
-        <div class="content">
-          <a href="https://izanhuang.github.io/markdown-previewer/" target="_blank">
-            <img src="assets/markdown-previewer.png" alt="Markdown Previewer" style="width:100%">
-            <div class="overlay">
-              <div class="text">An online markdown previewer made with React.</div>
-            </div>
-          </a>
-          <h4>Markdown Previewer</h4>
-        </div>
-      </div>
-      <div class="column javascript">
-        <div class="content">
-          <a href="https://izanhuang.github.io/random-quote-machine/" target="_blank">
-            <img src="assets/random-quote-generator.png" alt="Random Quote Generator" style="width:100%">
-            <div class="overlay">
-              <div class="text">A random famous quote generating and color changing web app made with React and axios.</div>
-            </div>
-          </a>
-          <h4>Random Quote Generator</h4>
-        </div>
-      </div>
-
-      <div class="column htmlcss">
-        <div class="content">
-          <a href="https://izanhuang.github.io/portfolio/" target="_blank">
-            <img src="assets/first-portfolio.png" alt="Izan's first portfolio" style="width:100%">
-            <div class="overlay">
-              <div class="text">Check out my first portfolio made with HTML and CSS!</div>
-            </div>
-          </a>
-          <h4>Izan's First Portfolio</h4>
-        </div>
-      </div>
-      <div class="column htmlcss">
-        <div class="content">
-          <a href="https://izanhuang.github.io/Documentation-Page/" target="_blank">
-            <img src="assets/documentation-page.png" alt="Documentation Page" style="width:100%">
-            <div class="overlay">
-              <div class="text">A documentation page on makeup artistry made with HTML and CSS.</div>
-            </div>
-          </a>
-          <h4>Documentation Page</h4>
-        </div>
-      </div>
-      <div class="column htmlcss">
-        <div class="content">
-          <a href="https://izanhuang.github.io/Product-Landing-Page/" target="_blank">
-            <img src="assets/product-landing-page.png" alt="Product Landing Page" style="width:100%">
-            <div class="overlay">
-              <div class="text">The product landing page for an imaginary fashion brand made with HTML and CSS.</div>
-            </div>
-          </a>
-          <h4>Product Landing Page</h4>
-        </div>
-      </div>
-      <div class="column htmlcss">
-        <div class="content">
-          <a href="https://izanhuang.github.io/Survey-Form/" target="_blank">
-            <img src="assets/survey-form.png" alt="Survery Form" style="width:100%">
-            <div class="overlay">
-              <div class="text">A customer satisfication survey form made with HTML and CSS.</div>
-            </div>
-          </a>
-          <h4>Simple Survery Form</h4>
-        </div>
-      </div>
-      <div class="column htmlcss">
-        <div class="content">
-          <a href="https://izanhuang.github.io/Tribute-Page/" target="_blank">
-            <img src="assets/tribute-page.png" alt="Tribute Page to Chadwick Boseman" style="width:100%">
-            <div class="overlay">
-              <div class="text">A webpage in tribute to Chadwick Boseman following his premature death from colon cancer in 2020.</div>
-            </div>
-          </a>
-          <h4>Tribute Page to Chadwick Boseman</h4>
-        </div>
-      </div>
-      
-      <div class="column other">
-        <div class="content">
-          <a href="https://sbuvoting.github.io/SBU-Voting-Collab-master/" target="_blank">
-            <img src="assets/sbu-voting.png" alt="SBU Voting Website for ISE 339: Benevolent Computing" style="width:100%">
-            <div class="overlay">
-              <div class="text">A webpage I worked on for Stony Brook University's Center for Civic Justice in the course ISE 339: Benevolent Computing.</div>
-            </div>
-          </a>
-          <h4>SBU Voting</h4>
-        </div>
-      </div>
-      <div class="column other">
-        <div class="content">
-          <a href="https://play.google.com/store/apps/details?id=com.hackhealth.foodwithfriends" target="_blank">
-            <img src="assets/food-with-friends.png" alt="SBU HackHealth 2020 Project" style="width:100%">
-            <div class="overlay">
-              <div class="text">An Android app my friends and I developed at Stony Brook University's HackHealth 2020 hackathon. Won “The Most Innovative Hack” award.</div>
-            </div>
-          </a>
-          <h4>Food with Friends</h4>
-        </div>
-      </div>
-      <div class="column other">
-        <div class="content">
-          <a href="https://docs.google.com/presentation/d/1Iawa4PjUNLikzLkYtLPA5CdQMsyVji3i90PIc9iPtlI/edit#slide=id.p" target="_blank">
-            <img src="assets/database-design.png" alt="Database Design Project for ISE 305: Database Design and Practice" style="width:100%">
-            <div class="overlay">
-              <div class="text">For the course ISE 305: Database and Deisgn, my team and I modeled a database, queried it with SQL, and created forms and a report.</div>
-            </div>
-          </a>
-          <h4>Database Design</h4>
-        </div>
-      </div>
-    <!-- END GRID -->
-    </div>
-  </div>
-</main>
-
-<script>
-  filterSelection("all")
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("column");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-      removeClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-    }
-  }
-  
-  function addClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-    }
-  }
-  
-  function removeClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KCNXGZPCS1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
       }
-    }
-    element.className = arr1.join(" ");
-  }
-  
-  
-  // Add active class to the current button (highlight it)
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-</script>
+      gtag('js', new Date())
 
-<!-- Footer -->
-<footer>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/izanhuang/" target="_blank" accesskey="l"><i class="fab fa-linkedin"></i></a><br></li>
-    <li><a href="https://github.com/izanhuang" target="_blank" accesskey="l"><i class="fab fa-github"></i></a><br></li>
-    <li><a href="https://drive.google.com/file/d/19onzIiyE90wKjSvhuz_U11RXWY1iqzqR/view?usp=sharing" target="_blank" accesskey="l"><i class="fa fa-file" aria-hidden="true"></i></a><br></li>
-    <li><a href="mailto:huang.izan@gmail.com?subject=subject&cc=cc@example.com" accesskey="g"><i class="far fa-envelope"></i></a></li>
-  </ul>
-</footer>
+      gtag('config', 'G-KCNXGZPCS1')
+    </script>
+  </head>
 
-</body>
+  <body>
+    <!-- Header -->
+    <header>
+      <input id="nav-toggle" type="checkbox" />
+      <div class="banner-grid-container">
+        <div class="left-menu">
+          <ul class="menu">
+            <li><a class="navbar-active" href="index.html">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="logo">
+          <h2 class="name"><a href="index.html">Izan Huang</a></h2>
+        </div>
+
+        <div class="right-menu">
+          <ul class="menu">
+            <li><a href="html/about.html">About</a></li>
+            <!-- <li><a href="html/resume.html">Resume</a></li> -->
+            <li><a href="html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="menu hide">
+        <li><a class="hide" href="index.html">Projects</a></li>
+        <li><a href="html/about.html">About</a></li>
+        <!-- <li><a href="html/resume.html">Resume</a></li> -->
+        <li><a href="html/contact.html">Contact</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </header>
+
+    <!-- Projects -->
+    <main>
+      <!-- Introduction -->
+      <div class="main header-content-spacing">
+        <div class="introduction">
+          <h1>
+            Hi, my name is Izan.
+            <span class="emoji">👩🏻‍💻</span>
+          </h1>
+          <h3>
+            I am a
+            <a
+              class="blue link"
+              href="https://www.linkedin.com/in/izanhuang/"
+              target="_blank"
+            >
+              front-end developer
+            </a>
+            and artist based in NYC.
+          </h3>
+          <h3>Welcome to my portfolio of mini-projects!</h3>
+        </div>
+      </div>
+
+      <div class="main">
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">
+            Show all
+          </button>
+          <button class="btn" onclick="filterSelection('htmlcss')">
+            HTML/CSS
+          </button>
+          <button class="btn" onclick="filterSelection('javascript')">
+            JavaScript
+          </button>
+          <button class="btn" onclick="filterSelection('react')">
+            React
+          </button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column react">
+            <div class="content">
+              <a
+                href="https://izanhuang.github.io/pomodoro-clock/"
+                target="_blank"
+              >
+                <img
+                  src="assets/pomodoro-clock.png"
+                  alt="Pomodoro Clock"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    An online timer for managing sessions of work or study, and
+                    break time.
+                  </div>
+                </div>
+              </a>
+              <h4>Pomodoro Clock</h4>
+            </div>
+          </div>
+
+          <div class="column htmlcss">
+            <div class="content">
+              <a href="https://izanhuang.github.io/retroverse/" target="_blank">
+                <img
+                  src="assets/retroverse.png"
+                  alt="Retroverse"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    A landing page for purchasing retro games, made with
+                    Bootstrap.
+                  </div>
+                </div>
+              </a>
+              <h4>Retroverse</h4>
+            </div>
+          </div>
+
+          <div class="column javascript">
+            <div class="content">
+              <a href="https://github.com/izanhuang/cine" target="_blank">
+                <img
+                  src="assets/cine.png"
+                  alt="Movie Web App"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    A landing page for newly released movies.
+                  </div>
+                </div>
+              </a>
+              <h4>Movie Web App</h4>
+            </div>
+          </div>
+
+          <div class="column javascript">
+            <div class="content">
+              <a
+                href="https://izanhuang.github.io/local-weather-app/"
+                target="_blank"
+              >
+                <img
+                  src="assets/local-weather-app.png"
+                  alt="Local Weather App"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    A weather app to find the temperature of your local area,
+                    made with Vanilla JavaScript.
+                  </div>
+                </div>
+              </a>
+              <h4>Local Weather App</h4>
+            </div>
+          </div>
+
+          <div class="column htmlcss">
+            <div class="content">
+              <a href="https://izanhuang.github.io/CherryCola/" target="_blank">
+                <img
+                  src="assets/cherry-cola.png"
+                  alt="Cherry Cola's Landing Page"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    A product's landing page, inspired by a song.
+                  </div>
+                </div>
+              </a>
+              <h4>Cherry Cola</h4>
+            </div>
+          </div>
+
+          <div class="column react">
+            <div class="content">
+              <a
+                href="https://izanhuang.github.io/javascript-calculator/"
+                target="_blank"
+              >
+                <img
+                  src="assets/javascript-calculator.png"
+                  alt="JavaScript Calculator"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    A gradient themed JavaScript calculator made with React.
+                  </div>
+                </div>
+              </a>
+              <h4>JavaScript Calculator</h4>
+            </div>
+          </div>
+          <div class="column react">
+            <div class="content">
+              <a
+                href="https://izanhuang.github.io/drum-machine/"
+                target="_blank"
+              >
+                <img
+                  src="assets/drum-machine.png"
+                  alt="Drum Machine"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    A simple drum machine activated by button or mouse clicks
+                    made with React.
+                  </div>
+                </div>
+              </a>
+              <h4>Drum Machine</h4>
+            </div>
+          </div>
+          <div class="column react">
+            <div class="content">
+              <a
+                href="https://izanhuang.github.io/markdown-previewer/"
+                target="_blank"
+              >
+                <img
+                  src="assets/markdown-previewer.png"
+                  alt="Markdown Previewer"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    An online markdown previewer made with React.
+                  </div>
+                </div>
+              </a>
+              <h4>Markdown Previewer</h4>
+            </div>
+          </div>
+          <div class="column react">
+            <div class="content">
+              <a
+                href="https://izanhuang.github.io/random-quote-machine/"
+                target="_blank"
+              >
+                <img
+                  src="assets/random-quote-generator.png"
+                  alt="Random Quote Generator"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    A random famous quote generating and color changing web app
+                    made with React and axios.
+                  </div>
+                </div>
+              </a>
+              <h4>Random Quote Generator</h4>
+            </div>
+          </div>
+
+          <div class="column htmlcss">
+            <div class="content">
+              <a href="https://izanhuang.github.io/portfolio/" target="_blank">
+                <img
+                  src="assets/first-portfolio.png"
+                  alt="Izan's first portfolio"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    Check out my first portfolio made with HTML and CSS!
+                  </div>
+                </div>
+              </a>
+              <h4>Izan's First Portfolio</h4>
+            </div>
+          </div>
+          <div class="column htmlcss">
+            <div class="content">
+              <a
+                href="https://izanhuang.github.io/Documentation-Page/"
+                target="_blank"
+              >
+                <img
+                  src="assets/documentation-page.png"
+                  alt="Documentation Page"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    A documentation page on makeup artistry made with HTML and
+                    CSS.
+                  </div>
+                </div>
+              </a>
+              <h4>Documentation Page</h4>
+            </div>
+          </div>
+          <div class="column htmlcss">
+            <div class="content">
+              <a
+                href="https://izanhuang.github.io/Product-Landing-Page/"
+                target="_blank"
+              >
+                <img
+                  src="assets/product-landing-page.png"
+                  alt="Product Landing Page"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    The product landing page for an imaginary fashion brand made
+                    with HTML and CSS.
+                  </div>
+                </div>
+              </a>
+              <h4>Product Landing Page</h4>
+            </div>
+          </div>
+          <div class="column htmlcss">
+            <div class="content">
+              <a
+                href="https://izanhuang.github.io/Survey-Form/"
+                target="_blank"
+              >
+                <img
+                  src="assets/survey-form.png"
+                  alt="Survery Form"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    A customer satisfication survey form made with HTML and CSS.
+                  </div>
+                </div>
+              </a>
+              <h4>Simple Survery Form</h4>
+            </div>
+          </div>
+          <div class="column htmlcss">
+            <div class="content">
+              <a
+                href="https://izanhuang.github.io/Tribute-Page/"
+                target="_blank"
+              >
+                <img
+                  src="assets/tribute-page.png"
+                  alt="Tribute Page to Chadwick Boseman"
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    A webpage in tribute to Chadwick Boseman following his
+                    premature death from colon cancer in 2020.
+                  </div>
+                </div>
+              </a>
+              <h4>Tribute Page to Chadwick Boseman</h4>
+            </div>
+          </div>
+          <!-- END GRID -->
+        </div>
+      </div>
+    </main>
+
+    <script>
+      filterSelection('all')
+      function filterSelection(c) {
+        var x, i
+        x = document.getElementsByClassName('column')
+        if (c == 'all') c = ''
+        for (i = 0; i < x.length; i++) {
+          removeClass(x[i], 'show')
+          if (x[i].className.indexOf(c) > -1) addClass(x[i], 'show')
+        }
+      }
+
+      function addClass(element, name) {
+        var i, arr1, arr2
+        arr1 = element.className.split(' ')
+        arr2 = name.split(' ')
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += ' ' + arr2[i]
+          }
+        }
+      }
+
+      function removeClass(element, name) {
+        var i, arr1, arr2
+        arr1 = element.className.split(' ')
+        arr2 = name.split(' ')
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1)
+          }
+        }
+        element.className = arr1.join(' ')
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById('myBtnContainer')
+      var btns = btnContainer.getElementsByClassName('btn')
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener('click', function () {
+          var current = document.getElementsByClassName('active')
+          current[0].className = current[0].className.replace(' active', '')
+          this.className += ' active'
+        })
+      }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/izanhuang/"
+            target="_blank"
+            accesskey="l"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <br />
+        </li>
+        <li>
+          <a href="https://github.com/izanhuang" target="_blank" accesskey="l">
+            <i class="fab fa-github"></i>
+          </a>
+          <br />
+        </li>
+
+        <li>
+          <a
+            href="mailto:huang.izan@gmail.com?subject=subject&cc=cc@example.com"
+            accesskey="g"
+          >
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
